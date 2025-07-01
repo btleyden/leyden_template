@@ -38,10 +38,15 @@ def configuration(ARGUMENTS, paper = False, config_user_yaml = 'config_user.yaml
 
     # Loads config yaml files
     CONFIG = {'user': config_user_yaml, 'global': config_global_yaml}
+    keys_to_delete = []
     for key, val in CONFIG.items():
-        CONFIG[key] = yaml.load(open(val, 'rU'), Loader = yaml.SafeLoader)
+        CONFIG[key] = yaml.load(open(val, 'r'), Loader = yaml.SafeLoader)
         if not CONFIG[key]:
-            del CONFIG[key]
+            keys_to_delete.append(key)
+    
+    # Remove empty configs
+    for key in keys_to_delete:
+        del CONFIG[key]
 
     # Stores executable names and prerequisite checks. Prefer user to global.
     executable_names = misc.add_two_dict_keys(d = CONFIG, common_key = 'executable_names')

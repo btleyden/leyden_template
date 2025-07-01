@@ -6,7 +6,7 @@ The GSLab Template is a minimal working demonstration of the [tools and organiza
 
 You'll need the following to run the template. [Homebrew](https://brew.sh/) for Mac and [Linuxbrew](http://linuxbrew.sh/) for Linux make this easier.
 * Windows `cmd.exe`, Mac OS X `bash`, or Linux `bash`.
-* [Python 2.7.X](https://wiki.python.org/moin/BeginnersGuide/Download) and [pip](https://pip.pypa.io/en/stable/installing/) for [Windows](https://docs.python.org/2/using/windows.html), [Mac](https://docs.python.org/2/using/mac.html) or [Linux](https://docs.python.org/2/using/unix.html).
+* [Python >= 3.8](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/) for [Windows](https://docs.python.org/3/using/windows.html), [Mac](https://docs.python.org/3/using/mac.html) or [Linux](https://docs.python.org/3/using/unix.html).
 * [git](https://git-scm.com/downloads) for version control.
     * [git-lfs](https://git-lfs.github.com/) for versioning large files. 
     * You'll need both git and git-lfs to clone the repository. 
@@ -182,7 +182,7 @@ That's fine, but you'll need version 2.4.0 or later. Just switch `python run.py`
 
 Be aware that the [formatting of the cache](https://bitbucket.org/scons/scons/src/rel_2.5.1/src/CHANGES.txt?at=2.5.1&fileviewer=file-view-default#CHANGES.txt-60) changed in version 2.5.0 of SCons. A cache can get messy and fall out of sync if collaborators use a mix of older and newer versions. 
 
-The version of SCons packaged with this repository is scons-local-3.0.1. Our `run.py` scripts are just wrappers around the `scons.py` included in scons-local. These files exist only to execute SCons, and you shouldn't need to edit them frequently, if at all. The structure of your SCons tree should be entirely specified in your SConstruct and SConscript files.
+The version of SCons packaged with this repository is scons-local-4.9.1. Our `run.py` scripts are just wrappers around the `scons.py` included in scons-local. These files exist only to execute SCons, and you shouldn't need to edit them frequently, if at all. The structure of your SCons tree should be entirely specified in your SConstruct and SConscript files.
 
 #### Where should I track the prerequisites for my repository?
 
