@@ -1,5 +1,5 @@
-*** New build: {2025-07-03 09:27:13} ***
-*** Build completed: {2025-07-03 09:27:22} ***
+*** New build: {2025-07-03 09:54:04} ***
+*** Build completed: {2025-07-03 09:54:04} ***
  
  
 *** Warning!!! The log below does not have timestamps, the Sconscript may not have finished.
@@ -3895,14 +3895,5 @@ Latexmk: All targets (/Users/bl693/leyden_template/paper_slides/build/slides/sli
 
 scons: done reading SConscript files.
 scons: Building targets ...
-os.chdir('source/paper/')
-build_latex(["build/paper/paper_template.pdf"], ["source/paper/paper_template.tex", "source/paper/subfiles/abstract.tex", "source/paper/subfiles/introduction.tex", "source/paper/subfiles/appendix_template.tex", "input/descriptive/plot.pdf", "input/descriptive/table.txt", "source/raw/references/references.bib", "source/raw/references/jpe.bst"])
-Running: latexmk -pdf -interaction=nonstopmode  -output-directory=../../build/paper -bibtex -jobname=paper_template paper_template.tex > ../../build/paper/sconscript_paper_template.log
-os.chdir('/Users/bl693/leyden_template/paper_slides')
-os.chdir('source/slides/')
-build_latex(["build/slides/slides_template.pdf"], ["source/slides/slides_template.tex", "source/raw/references/references.bib", "source/raw/references/jpe.bst"])
-Running: latexmk -pdf -interaction=nonstopmode  -output-directory=../../build/slides -bibtex -jobname=slides_template slides_template.tex > ../../build/slides/sconscript_slides_template.log
-os.chdir('/Users/bl693/leyden_template/paper_slides')
-Install directory: "build/paper" as "release/paper"
-Install directory: "build/slides" as "release/slides"
-scons: done building targets.
+scons: *** Do not know how to make File target `10' (/Users/bl693/leyden_template/paper_slides/10).  Stop.
+scons: building terminated because of errors.

@@ -8,16 +8,17 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit 76d14665c454a4e0db26d3ea08eecece7c241b46
+commit cc237bdc46dc29d5b3e23e331728ae29ab1b3b76
 Author: Ben Leyden <btleyden@gmail.com>
-Date:   Thu Jul 3 09:27:09 2025 -0400
+Date:   Thu Jul 3 09:27:40 2025 -0400
 
-    Update paper_slides/input
+    Update paper_slides/release
 
 
 Files changed since last commit:
 
 
+README.md
 
 ===================================
 
@@ -31,19 +32,19 @@ Files changed since last commit:
    modified on: 30 Jun 2025 22:38:58
    size of file: 458
 ./state_of_repo.log:
-   modified on: 03 Jul 2025 09:27:22
-   size of file: 426
+   modified on: 03 Jul 2025 09:54:04
+   size of file: 438
 ./SConstruct:
    modified on: 02 Jul 2025 23:46:21
    size of file: 1563
 ./state_of_input.log:
-   modified on: 03 Jul 2025 09:27:14
+   modified on: 03 Jul 2025 09:54:04
    size of file: 321
 ./config_global.yaml:
    modified on: 03 Jul 2025 09:18:04
    size of file: 1316
 ./sconstruct.log:
-   modified on: 03 Jul 2025 09:27:13
+   modified on: 03 Jul 2025 09:54:04
    size of file: 41
 ./input/state_of_repo.log:
    modified on: 03 Jul 2025 09:25:24
@@ -96,6 +97,15 @@ Files changed since last commit:
 ./source/raw/references/references.bib:
    modified on: 02 Jul 2025 17:53:34
    size of file: 2326
+./release/state_of_repo.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 6381
+./release/state_of_input.log:
+   modified on: 03 Jul 2025 09:27:14
+   size of file: 321
+./release/sconstruct.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 223815
 ./release/paper/paper_template.out:
    modified on: 03 Jul 2025 09:27:17
    size of file: 283

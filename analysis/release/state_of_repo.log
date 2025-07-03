@@ -8,17 +8,22 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit af135358dcfe4567daf2f76a5afe2c50cded954a
+commit cc237bdc46dc29d5b3e23e331728ae29ab1b3b76
 Author: Ben Leyden <btleyden@gmail.com>
-Date:   Thu Jul 3 09:25:59 2025 -0400
+Date:   Thu Jul 3 09:27:40 2025 -0400
 
-    Cleaning up relaese in the repo
+    Update paper_slides/release
 
 
 Files changed since last commit:
 
 
-analysis/release/descriptive/sconscript_descriptive.log
+README.md
+paper_slides/input/sconstruct.log
+paper_slides/input/state_of_repo.log
+paper_slides/input/table.txt
+paper_slides/release/sconstruct.log
+paper_slides/release/state_of_repo.log
 
 ===================================
 
@@ -32,8 +37,8 @@ analysis/release/descriptive/sconscript_descriptive.log
    modified on: 30 Jun 2025 22:38:57
    size of file: 449
 ./state_of_repo.log:
-   modified on: 03 Jul 2025 09:26:12
-   size of file: 488
+   modified on: 03 Jul 2025 09:56:01
+   size of file: 613
 ./SConstruct:
    modified on: 03 Jul 2025 00:04:59
    size of file: 1844
@@ -41,7 +46,7 @@ analysis/release/descriptive/sconscript_descriptive.log
    modified on: 03 Jul 2025 09:11:11
    size of file: 1266
 ./sconstruct.log:
-   modified on: 03 Jul 2025 09:26:10
+   modified on: 03 Jul 2025 09:56:01
    size of file: 41
 ./source/prepare_data/create_data.m:
    modified on: 30 Jun 2025 22:38:57
@@ -68,11 +73,11 @@ analysis/release/descriptive/sconscript_descriptive.log
    modified on: 03 Jul 2025 09:10:34
    size of file: 441
 ./release/state_of_repo.log:
-   modified on: 03 Jul 2025 09:25:24
-   size of file: 2860
+   modified on: 03 Jul 2025 09:26:12
+   size of file: 2911
 ./release/sconstruct.log:
-   modified on: 03 Jul 2025 09:25:24
-   size of file: 985
+   modified on: 03 Jul 2025 09:26:12
+   size of file: 1887
 ./release/descriptive/sconscript_descriptive.log:
    modified on: 03 Jul 2025 09:26:11
    size of file: 97
