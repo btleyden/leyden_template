@@ -16,7 +16,7 @@ source:
   raw: source/raw/
 
 # Input Directories (will record contents)
-input: input
+input: input/
 
 # Executable names
 executable_names:
