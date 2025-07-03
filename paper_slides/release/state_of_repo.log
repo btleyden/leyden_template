@@ -8,175 +8,217 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit d19ddc8f098f7d2f54a75d8ad297b154985b1be8
-Author: Adam Rosenberg <arosenbe@stanford.edu>
-Date:   Mon Feb 12 09:08:14 2018 -0800
+commit cc237bdc46dc29d5b3e23e331728ae29ab1b3b76
+Author: Ben Leyden <btleyden@gmail.com>
+Date:   Thu Jul 3 09:27:40 2025 -0400
 
-    #95 switch to scons 3
+    Update paper_slides/release
 
 
 Files changed since last commit:
 
 
 README.md
-analysis/SConstruct
-analysis/config_global.yaml
-analysis/release/descriptive/plot.eps
-analysis/release/descriptive/sconscript_descriptive.log
-analysis/release/sconstruct.log
-analysis/release/state_of_repo.log
-analysis/source/descriptive/SConscript
-analysis/source/descriptive/descriptive.py
-analysis/source/prepare_data/SConscript
-analysis/source/prepare_data/create_data.m
-analysis/source/prepare_data/create_data.py
-analysis/source/prepare_data/create_data.r
-config/config_python.py
-config/configuration.py
-paper_slides/SConstruct
-paper_slides/config_global.yaml
-paper_slides/release/paper/ondeck.pdf
-paper_slides/release/paper/online_appendix.pdf
-paper_slides/release/paper/paper.pdf
-paper_slides/release/paper/sconscript.log
-paper_slides/release/paper/text.pdf
-paper_slides/release/sconstruct.log
-paper_slides/release/state_of_input.log
-paper_slides/release/state_of_repo.log
-paper_slides/release/talk/sconscript.log
-paper_slides/release/talk/slides.pdf
-paper_slides/source/paper/SConscript
-paper_slides/source/tables/SConscript
-paper_slides/source/talk/SConscript
 
 ===================================
 
  *** FILE STATUS ***
 
 ===================================
-./config_global.yaml:
-   modified on: 14 Feb 2018 21:10:52
-   size of file: 1283
 ./config_user.yaml:
-   modified on: 14 Feb 2018 20:12:51
-   size of file: 586
+   modified on: 01 Jul 2025 11:31:13
+   size of file: 626
 ./run.py:
-   modified on: 09 Jan 2018 08:11:40
+   modified on: 30 Jun 2025 22:38:58
    size of file: 458
-./SConstruct:
-   modified on: 14 Feb 2018 21:09:37
-   size of file: 1818
-./sconstruct.log:
-   modified on: 14 Feb 2018 21:11:14
-   size of file: 199
-./state_of_input.log:
-   modified on: 14 Feb 2018 21:11:14
-   size of file: 154
 ./state_of_repo.log:
-   modified on: 14 Feb 2018 21:11:14
-   size of file: 1509
-./build/paper/ondeck.pdf:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 18776
-./build/paper/online_appendix.pdf:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 45966
-./build/paper/paper.pdf:
-   modified on: 14 Feb 2018 21:10:37
-   size of file: 59075
-./build/paper/sconscript.log:
-   modified on: 14 Feb 2018 21:10:38
-   size of file: 339
-./build/paper/text.pdf:
-   modified on: 14 Feb 2018 21:10:38
-   size of file: 18776
-./build/tables/sconscript.log:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 154
-./build/tables/table.lyx:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 4094
-./build/talk/sconscript.log:
-   modified on: 14 Feb 2018 21:10:40
-   size of file: 586
-./build/talk/slides.pdf:
-   modified on: 14 Feb 2018 21:10:40
-   size of file: 29958
-./input/plot.eps:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 15385
+   modified on: 03 Jul 2025 09:54:04
+   size of file: 438
+./SConstruct:
+   modified on: 02 Jul 2025 23:46:21
+   size of file: 1563
+./state_of_input.log:
+   modified on: 03 Jul 2025 09:54:04
+   size of file: 321
+./config_global.yaml:
+   modified on: 03 Jul 2025 09:18:04
+   size of file: 1316
+./sconstruct.log:
+   modified on: 03 Jul 2025 09:54:04
+   size of file: 41
+./input/state_of_repo.log:
+   modified on: 03 Jul 2025 09:25:24
+   size of file: 2860
 ./input/table.txt:
-   modified on: 09 Jan 2018 08:11:40
+   modified on: 03 Jul 2025 09:24:54
    size of file: 39
-./release/sconstruct.log:
-   modified on: 14 Feb 2018 21:11:11
-   size of file: 250
-./release/state_of_input.log:
-   modified on: 14 Feb 2018 21:11:11
-   size of file: 154
-./release/state_of_repo.log:
-   modified on: 14 Feb 2018 21:11:11
-   size of file: 5186
-./release/paper/ondeck.pdf:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 18776
-./release/paper/online_appendix.pdf:
-   modified on: 14 Feb 2018 21:10:36
-   size of file: 45966
-./release/paper/paper.pdf:
-   modified on: 14 Feb 2018 21:10:37
-   size of file: 59075
-./release/paper/sconscript.log:
-   modified on: 14 Feb 2018 21:10:38
-   size of file: 339
-./release/paper/text.pdf:
-   modified on: 14 Feb 2018 21:10:38
-   size of file: 18776
-./release/paper/text_latex.aux:
-   modified on: 14 Feb 2018 20:47:15
-   size of file: 166
-./release/paper/text_latex.log:
-   modified on: 14 Feb 2018 20:47:15
-   size of file: 20216
-./release/paper/text_latex.pdf:
-   modified on: 14 Feb 2018 20:47:15
-   size of file: 18776
-./release/talk/sconscript.log:
-   modified on: 14 Feb 2018 21:10:40
-   size of file: 586
-./release/talk/slides.pdf:
-   modified on: 14 Feb 2018 21:10:40
-   size of file: 29958
-./source/figures/figure.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 2214
-./source/paper/ondeck.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 2522
-./source/paper/online_appendix.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 3610
-./source/paper/paper.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 5236
+./input/sconstruct.log:
+   modified on: 03 Jul 2025 09:25:24
+   size of file: 985
+./input/descriptive/sconscript_descriptive.log:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 97
+./input/descriptive/plot.eps:
+   modified on: 03 Jul 2025 09:25:24
+   size of file: 12351
+./input/descriptive/table.txt:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 39
+./input/descriptive/plot.pdf:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 5385
+./input/lg/data.txt:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 1988897
+./source/paper/paper_template.tex:
+   modified on: 03 Jul 2025 09:16:17
+   size of file: 1986
 ./source/paper/SConscript:
-   modified on: 14 Feb 2018 21:10:11
-   size of file: 699
-./source/paper/text.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 2522
-./source/paper/text.tex:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 1300
-./source/tables/SConscript:
-   modified on: 12 Feb 2018 10:23:10
-   size of file: 266
-./source/tables/table.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 4082
-./source/talk/SConscript:
-   modified on: 12 Feb 2018 10:23:18
-   size of file: 259
-./source/talk/slides.lyx:
-   modified on: 09 Jan 2018 08:11:40
-   size of file: 4697
+   modified on: 03 Jul 2025 09:17:54
+   size of file: 947
+./source/paper/subfiles/abstract.tex:
+   modified on: 02 Jul 2025 17:58:10
+   size of file: 29
+./source/paper/subfiles/introduction.tex:
+   modified on: 03 Jul 2025 09:15:59
+   size of file: 376
+./source/paper/subfiles/appendix_template.tex:
+   modified on: 02 Jul 2025 23:28:11
+   size of file: 27
+./source/slides/slides_template.tex:
+   modified on: 03 Jul 2025 09:20:55
+   size of file: 2536
+./source/slides/SConscript:
+   modified on: 02 Jul 2025 23:46:37
+   size of file: 632
+./source/raw/references/jpe.bst:
+   modified on: 02 Jul 2025 17:52:24
+   size of file: 32080
+./source/raw/references/references.bib:
+   modified on: 02 Jul 2025 17:53:34
+   size of file: 2326
+./release/state_of_repo.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 6381
+./release/state_of_input.log:
+   modified on: 03 Jul 2025 09:27:14
+   size of file: 321
+./release/sconstruct.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 223815
+./release/paper/paper_template.out:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 283
+./release/paper/sconscript_paper_template.log:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 46469
+./release/paper/paper_template.bbl:
+   modified on: 03 Jul 2025 09:27:16
+   size of file: 491
+./release/paper/paper_template.pdf:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 130144
+./release/paper/paper_template.aux:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 1038
+./release/paper/paper_template.log:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 35704
+./release/paper/paper_template.fls:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 28919
+./release/paper/paper_template.blg:
+   modified on: 03 Jul 2025 09:27:16
+   size of file: 997
+./release/paper/paper_template.fdb_latexmk:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 27276
+./release/slides/slides_template.out:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 0
+./release/slides/slides_template.toc:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 0
+./release/slides/slides_template.pdf:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 53113
+./release/slides/slides_template.bbl:
+   modified on: 03 Jul 2025 09:27:20
+   size of file: 491
+./release/slides/sconscript_slides_template.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 64373
+./release/slides/slides_template.blg:
+   modified on: 03 Jul 2025 09:27:20
+   size of file: 998
+./release/slides/slides_template.fls:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 43631
+./release/slides/slides_template.log:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 51905
+./release/slides/slides_template.aux:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 1110
+./release/slides/slides_template.snm:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 38
+MAX ITERATIONS (10) HIT IN DIRECTORY: ./release/slides
+./build/paper/paper_template.out:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 283
+./build/paper/sconscript_paper_template.log:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 46469
+./build/paper/paper_template.bbl:
+   modified on: 03 Jul 2025 09:27:16
+   size of file: 491
+./build/paper/paper_template.pdf:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 130144
+./build/paper/paper_template.aux:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 1038
+./build/paper/paper_template.log:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 35704
+./build/paper/paper_template.fls:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 28919
+./build/paper/paper_template.blg:
+   modified on: 03 Jul 2025 09:27:16
+   size of file: 997
+./build/paper/paper_template.fdb_latexmk:
+   modified on: 03 Jul 2025 09:27:17
+   size of file: 27276
+./build/slides/slides_template.out:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 0
+./build/slides/slides_template.toc:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 0
+./build/slides/slides_template.pdf:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 53113
+./build/slides/slides_template.bbl:
+   modified on: 03 Jul 2025 09:27:20
+   size of file: 491
+./build/slides/sconscript_slides_template.log:
+   modified on: 03 Jul 2025 09:27:22
+   size of file: 64373
+./build/slides/slides_template.blg:
+   modified on: 03 Jul 2025 09:27:20
+   size of file: 998
+./build/slides/slides_template.fls:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 43631
+./build/slides/slides_template.log:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 51905
+./build/slides/slides_template.aux:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 1110
+./build/slides/slides_template.snm:
+   modified on: 03 Jul 2025 09:27:21
+   size of file: 38
+MAX ITERATIONS (10) HIT IN DIRECTORY: ./build/slides

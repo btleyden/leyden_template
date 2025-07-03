@@ -4,6 +4,12 @@
 
 ===================================
 file path|file size in bytes
-plot.eps|15385
+state_of_repo.log|2860
 table.txt|39
+sconstruct.log|985
+descriptive/sconscript_descriptive.log|97
+descriptive/plot.eps|12351
+descriptive/table.txt|39
+descriptive/plot.pdf|5385
+lg/data.txt|1988897
 

@@ -1,0 +1,23 @@
+Import('env')
+
+# Set paths
+build = env['CONFIG']['global']['build']['slides']
+source = env['CONFIG']['global']['source']['slides']
+raw = env['CONFIG']['global']['source']['raw']
+
+# Specify Targets
+env.BuildLatex(
+    target=['#{}slides_template.pdf'.format(build)],
+    source=[
+        f'#{source}slides_template.tex',
+        # References
+        f'#{raw}references/references.bib',
+        f'#{raw}references/jpe.bst',
+    ],
+    log_ext='slides_template',
+    chdir=source,
+    rel_path = True  # Builder can't see `chdir`, so we indicate its use here
+)
+
+# Install Targets to Release
+env.Install('#release', '#{}'.format(build))
