@@ -6,7 +6,7 @@ data = env['CONFIG']['global']['build']['prepare_data']
 
 env.BuildPython(
     target = [
-        f'#{build}/plot.eps',
+        f'#{build}/plot.pdf',
         f'#{build}/table.txt'
     ],
     source = [
