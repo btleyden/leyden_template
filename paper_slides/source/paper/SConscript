@@ -1,21 +1,23 @@
 Import('env')
 
-build  = env['CONFIG']['global']['build']['paper']
+# Set paths
+build = env['CONFIG']['global']['build']['paper']
 source = env['CONFIG']['global']['source']['paper']
 
-env.BuildLyx(target = ['#%s/paper.pdf' % build],
-             source = ['#%s/paper.lyx' % source])
+# Specify Targets
+env.BuildLatex(
+    target=['#{}paper_template.pdf'.format(build)],
+    source=[
+        f'#{source}paper_template.tex',
+        # Subfiles
+        f'#{source}subfiles/abstract.tex',
+        f'#{source}subfiles/introduction.tex',
+        f'#{source}subfiles/appendix_template.tex',
+    ],
+    log_ext='paper_template',
+    chdir=source,
+    rel_path = True  # Builder can't see `chdir`, so we indicate its use here
+)
 
-env.BuildLyx(target = ['#%s/online_appendix.pdf' % build], 
-             source = ['#%s/online_appendix.lyx' % source])
-
-env.BuildLyx(target = ['#%s/text.pdf' % build],
-             source = ['#%s/text.lyx' % source])
-
-env.BuildLyx(target = ['#%s/ondeck.pdf' % build], 
-             source = ['#%s/ondeck.lyx' % source])
-
-# env.BuildLatex(target = ['#%s/text_latex.pdf' % build],
-#                source = ['#%s/text.tex'       % source])
-
-env.Install('#release', '#%s/' % build)
+# Install Targets to Release
+env.Install('#release', '#{}'.format(build))

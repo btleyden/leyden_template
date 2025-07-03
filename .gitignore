@@ -25,3 +25,11 @@ scons/
 *.out
 *.svn
 *.ipynb
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out

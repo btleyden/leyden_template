@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+
+% General packages
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage[titletoc,title]{appendix}
+\usepackage{booktabs}
+\usepackage{amsmath, amssymb, bbm}
+\usepackage{threeparttable}
+\usepackage{adjustbox}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{tikz}
+\usepackage{framed}
+\usepackage{color}
+
+% Define colors
+\definecolor{sangre}{rgb}{0.6,0.18,0.19}
+\definecolor{dullmagenta}{rgb}{0.4,0,0.4}
+\definecolor{darkblue}{rgb}{0,0,0.6}
+
+% Hyperref and natbib (order matters)
+\usepackage{natbib}
+\usepackage[hypertexnames=false, colorlinks, urlcolor=darkblue, citecolor=sangre, linkcolor=blue]{hyperref}
+
+% Footnotes and cleveref
+\usepackage[multiple]{footmisc}
+\usepackage[capitalize,noabbrev]{cleveref}
+\crefname{appsec}{Appendix}{Appendices}
+
+% Define exhibit paths
+\def\raw{../raw/}
+
+\title{
+	Paper Title\thanks{I am grateful to ...}
+}
+
+\author{
+	Benjamin T. Leyden\footnote{SC Johnson College of Business, Cornell University; CESifo; \href{mailto:leyden@cornell.edu}{leyden@cornell.edu}}
+}
+% \date{}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+
+\input{subfiles/abstract}
+
+\end{titlepage}
+
+\input{subfiles/introduction.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\clearpage
+\bibliographystyle{../../source/raw/references/jpe}
+\bibliography{../../source/raw/references/references.bib}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{appendices}
+	\setcounter{table}{0}
+	\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+	\setcounter{figure}{0}
+	\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+	\crefalias{section}{appsec}
+	\crefalias{subsection}{appsec}
+	\input{subfiles/appendix_template}
+\end{appendices}
+
+\end{document}
