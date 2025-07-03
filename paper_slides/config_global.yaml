@@ -3,16 +3,17 @@ gslab_version: 4.1.1
 
 # Build Directories
 build:
-  paper: build/paper
-  tables: build/tables
-  talk: build/talk
+  paper: build/paper/
+  tables: build/tables/
+  slides: build/slides/
 
 # Source Directories
 source:
-  figures: source/figures
-  paper: source/paper
-  tables: source/tables
-  talk: source/talk
+  figures: source/figures/
+  paper: source/paper/
+  tables: source/tables/
+  slides: source/slides/
+  raw: source/raw/
 
 # Input Directories (will record contents)
 input: input
@@ -41,7 +42,7 @@ prereq_checks:
 scons_debrief_args:
   look_in: release;source            # Folders to look in for large versioned files. Assumes ; seperator.
   file_MB_limit_lfs: 2               # Soft limit on file size (w/ LFS)
-  total_MB_limit_lfs: 500            # Soft limit on total size (w/ LFS)  
+  total_MB_limit_lfs: 500            # Soft limit on total size (w/ LFS)
   file_MB_limit: 0.5                 # Soft limit on file size (w/o LFS)
   total_MB_limit: 125                # Soft limit on total size (w/o LFS)
   git_attrib_path: ../.gitattributes # Location of .gitattributes

@@ -1,0 +1,96 @@
+\documentclass[11pt, aspectratio=169, handout]{beamer}
+
+\usetheme[sectionpage=simple, subsectionpage=simple]{metropolis}
+
+\usepackage{threeparttablex}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[natbibapa]{apacite}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{framed}
+\usepackage{adjustbox}
+\usepackage{bbm}
+\usepackage[makeroom]{cancel}
+\usepackage{dsfont}
+\usepackage{appendixnumberbeamer}
+\usepackage{bibentry}
+
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\newcommand{\semitransp}[2][60]{\color{fg!#1}#2}
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{snakes}
+
+\newcommand{\tikzmark}[1]{\tikz[baseline,remember picture] \coordinate (#1) {};}
+
+\newcommand{\scalefactor}{0.5}
+\renewcommand*{\bibfont}{\scriptsize}
+
+\setbeamercovered{transparent}% Dim out "inactive" elements
+
+% Define exhibit paths
+\def\raw{../raw/}
+
+% Set title page details
+\title[]{Cartel Communication}
+% \subtitle{...}
+\author[Leyden]{Benjamin T. Leyden}
+\institute{
+	%Charles H. Dyson School of Applied Economics and Management\\
+	SC Johnson College of Business\\
+	Cornell University\\
+
+	\begin{tabular}{@{}ll}
+	twitter: & {\href{https://www.twitter.com/btleyden}{@btleyden}}\\
+	email: & {\href{mailto:leyden@cornell.edu}{leyden@cornell.edu}}\\
+	% paper: & {\href{https://www.benleyden.com/}{benleyden.com/}}
+	\end{tabular}
+}
+% \date{July 22, 2022}
+
+\AtBeginSection[]
+{
+  \begin{frame}[standout]
+    \insertsectionhead
+  \end{frame}
+}
+
+\AtBeginSubsection[]
+{
+  \begin{frame}[standout]
+  	\insertsectionhead\\
+
+  	$ $
+
+    \insertsubsectionhead
+  \end{frame}
+}
+
+\begin{document}
+
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{...}
+
+...
+
+Here's a citation: \citep{Anderson1991}.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\clearpage
+\bibliographystyle{../../source/raw/references/jpe}
+\bibliography{../../source/raw/references/references.bib}
+
+\end{document}

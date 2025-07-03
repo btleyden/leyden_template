@@ -3,6 +3,7 @@ Import('env')
 # Set paths
 build = env['CONFIG']['global']['build']['paper']
 source = env['CONFIG']['global']['source']['paper']
+raw = env['CONFIG']['global']['source']['raw']
 
 # Specify Targets
 env.BuildLatex(
@@ -13,6 +14,9 @@ env.BuildLatex(
         f'#{source}subfiles/abstract.tex',
         f'#{source}subfiles/introduction.tex',
         f'#{source}subfiles/appendix_template.tex',
+        # References
+        f'#{raw}references/references.bib',
+        f'#{raw}references/jpe.bst',
     ],
     log_ext='paper_template',
     chdir=source,
