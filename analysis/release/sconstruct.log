@@ -1,20 +1,32 @@
-*** New build: {2020-01-29 21:07:56} ***
+*** New build: {2025-07-03 09:26:10} ***
+*** Build completed: {2025-07-03 09:26:12} ***
+ 
+ 
+*** Warning!!! The log below does not have timestamps, the Sconscript may not have finished.
+./release/descriptive/sconscript_descriptive.log
+*** Builder log created: {2025-07-03 09:26:11}
+
+*** Builder log completed: {2025-07-03 09:26:11}
+*** Warning!!! The log below does not have timestamps, the Sconscript may not have finished.
+./build/prepare_data/sconscript_create_data.log
+*** Builder log created: {2025-07-03 09:26:10}
+
+*** Builder log completed: {2025-07-03 09:26:11}
+*** Warning!!! The log below does not have timestamps, the Sconscript may not have finished.
+./build/descriptive/sconscript_descriptive.log
+*** Builder log created: {2025-07-03 09:26:11}
+
+*** Builder log completed: {2025-07-03 09:26:11}
 scons: done reading SConscript files.
 scons: Building targets ...
 build_python(["build/prepare_data/data.txt"], ["source/prepare_data/create_data.py"])
-build_python(["build/descriptive/plot.eps", "build/descriptive/table.txt"], ["source/descriptive/descriptive.py", "build/prepare_data/data.txt"])
+Running: python  -u source/prepare_data/create_data.py  > build/prepare_data/sconscript_create_data.log
+build_python(["build/descriptive/plot.pdf", "build/descriptive/table.txt"], ["source/descriptive/descriptive.py", "build/prepare_data/data.txt"])
+Running: python  -u source/descriptive/descriptive.py  > build/descriptive/sconscript_descriptive.log
 Install directory: "build/descriptive" as "release/descriptive"
+Install directory: "release/descriptive" as "/Users/bl693/leyden_template/paper_slides/input/descriptive"
 Install file: "build/prepare_data/data.txt" as "release/lg/data.txt"
+Install directory: "release/lg" as "/Users/bl693/leyden_template/paper_slides/input/lg"
+Install file: "release/sconstruct.log" as "/Users/bl693/leyden_template/paper_slides/input/sconstruct.log"
+Install file: "release/state_of_repo.log" as "/Users/bl693/leyden_template/paper_slides/input/state_of_repo.log"
 scons: done building targets.
-*** Build completed: {2020-01-29 21:08:02} ***
- 
- 
-./release/descriptive/sconscript_descriptive.log
-*** Builder log created: {2020-01-29 21:07:57}
-*** Builder log completed: {2020-01-29 21:08:02}
-./build/descriptive/sconscript_descriptive.log
-*** Builder log created: {2020-01-29 21:07:57}
-*** Builder log completed: {2020-01-29 21:08:02}
-./build/prepare_data/sconscript_create_data.log
-*** Builder log created: {2020-01-29 21:07:56}
-*** Builder log completed: {2020-01-29 21:07:57}

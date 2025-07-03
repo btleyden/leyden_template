@@ -8,17 +8,16 @@ as it can be edited after state_of_repo.log finishes running
 ===================================
 Last commit:
 
-commit b02e51d5a0b9c1090cda24367c2d68c7f4fb131b
-Author: David Ritzwoller <David.Ritzwoller@gmail.com>
-Date:   Wed Jan 29 21:06:58 2020 -0800
+commit af135358dcfe4567daf2f76a5afe2c50cded954a
+Author: Ben Leyden <btleyden@gmail.com>
+Date:   Thu Jul 3 09:25:59 2025 -0400
 
-    #110 add Loader
+    Cleaning up relaese in the repo
 
 
 Files changed since last commit:
 
 
-analysis/release/descriptive/plot.eps
 analysis/release/descriptive/sconscript_descriptive.log
 
 ===================================
@@ -27,77 +26,80 @@ analysis/release/descriptive/sconscript_descriptive.log
 
 ===================================
 ./config_user.yaml:
-   modified on: 29 Jan 2020 21:07:56
+   modified on: 01 Jul 2025 10:29:03
    size of file: 646
 ./run.py:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 30 Jun 2025 22:38:57
    size of file: 449
 ./state_of_repo.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 525
+   modified on: 03 Jul 2025 09:26:12
+   size of file: 488
 ./SConstruct:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 1878
+   modified on: 03 Jul 2025 00:04:59
+   size of file: 1844
 ./config_global.yaml:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 1264
+   modified on: 03 Jul 2025 09:11:11
+   size of file: 1266
 ./sconstruct.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 502
+   modified on: 03 Jul 2025 09:26:10
+   size of file: 41
 ./source/prepare_data/create_data.m:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 30 Jun 2025 22:38:57
    size of file: 202
 ./source/prepare_data/create_data.sh:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 30 Jun 2025 22:38:57
    size of file: 81
 ./source/prepare_data/create_data.do:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 30 Jun 2025 22:38:57
    size of file: 262
 ./source/prepare_data/SConscript:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 1126
+   modified on: 02 Jul 2025 23:59:16
+   size of file: 967
 ./source/prepare_data/create_data.py:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 260
+   modified on: 02 Jul 2025 23:59:57
+   size of file: 316
 ./source/prepare_data/create_data.r:
-   modified on: 23 Aug 2019 16:10:40
+   modified on: 30 Jun 2025 22:38:57
    size of file: 249
 ./source/descriptive/descriptive.py:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 548
+   modified on: 03 Jul 2025 09:11:43
+   size of file: 647
 ./source/descriptive/SConscript:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 501
+   modified on: 03 Jul 2025 09:10:34
+   size of file: 441
 ./release/state_of_repo.log:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 2874
+   modified on: 03 Jul 2025 09:25:24
+   size of file: 2860
 ./release/sconstruct.log:
-   modified on: 23 Aug 2019 16:10:40
-   size of file: 306
+   modified on: 03 Jul 2025 09:25:24
+   size of file: 985
 ./release/descriptive/sconscript_descriptive.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 96
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 97
 ./release/descriptive/plot.eps:
-   modified on: 29 Jan 2020 21:08:02
+   modified on: 03 Jul 2025 09:25:24
    size of file: 12351
 ./release/descriptive/table.txt:
-   modified on: 29 Jan 2020 21:08:01
+   modified on: 03 Jul 2025 09:26:11
    size of file: 39
+./release/descriptive/plot.pdf:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 5385
 ./release/lg/data.txt:
-   modified on: 29 Jan 2020 21:07:57
+   modified on: 03 Jul 2025 09:26:11
    size of file: 1988897
 ./build/prepare_data/sconscript_create_data.log:
-   modified on: 29 Jan 2020 21:07:57
-   size of file: 96
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 97
 ./build/prepare_data/data.txt:
-   modified on: 29 Jan 2020 21:07:57
+   modified on: 03 Jul 2025 09:26:11
    size of file: 1988897
 ./build/descriptive/sconscript_descriptive.log:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 96
-./build/descriptive/plot.eps:
-   modified on: 29 Jan 2020 21:08:02
-   size of file: 12351
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 97
 ./build/descriptive/table.txt:
-   modified on: 29 Jan 2020 21:08:01
+   modified on: 03 Jul 2025 09:26:11
    size of file: 39
+./build/descriptive/plot.pdf:
+   modified on: 03 Jul 2025 09:26:11
+   size of file: 5385
