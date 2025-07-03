@@ -7,4 +7,6 @@ def main():
         f.write('x\n')
         f.writelines(['%s\n' % x for x in range(1, 300001)])
 
-main()
+
+if __name__ == "__main__":
+    main()
