@@ -19,6 +19,7 @@
 \usepackage{dsfont}
 \usepackage{appendixnumberbeamer}
 \usepackage{bibentry}
+\usepackage{verbatim}
 
 \def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
 \newcommand{\semitransp}[2][60]{\color{fg!#1}#2}
@@ -36,6 +37,7 @@
 
 % Define exhibit paths
 \def\raw{../raw/}
+\def\descriptive{../../input/descriptive/}
 
 % Set title page details
 \title[]{Cartel Communication}
@@ -81,9 +83,23 @@
 
 \begin{frame}{...}
 
-...
+Here's a cite: \citet{Anderson1992}.
 
-Here's a citation: \citep{Anderson1991}.
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+		Here's some data:
+		\verbatiminput{\descriptive table.txt}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		Here's a figure:
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.8\textwidth]{\descriptive plot.pdf}
+			\caption{An example figure showing the results of our analysis.}
+			\label{fig:example_figure}
+		\end{figure}
+	\end{column}
+	\end{columns}
 
 \end{frame}
 
@@ -91,6 +107,6 @@ Here's a citation: \citep{Anderson1991}.
 
 %\clearpage
 \bibliographystyle{../../source/raw/references/jpe}
-\bibliography{../../source/raw/references/references.bib}
+\nobibliography{../../source/raw/references/references.bib}
 
 \end{document}
