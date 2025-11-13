@@ -24,7 +24,7 @@ You'll need the following to run the template. [Homebrew](https://brew.sh/) for 
 
 1. Open a shell, clone the repository, and navigate to its root.
     ```bash
-    git lfs clone https://github.com/gslab-econ/template.git YourProjectName
+    git lfs clone https://github.com/btleyden/leyden_template.git YourProjectName
     cd YourProjectName
     ```
 2. Remove the template git history (optional, but recommended) and initialize a new git repo. Be careful to not remove `.gitignore` and `.gitattributes`.
